@@ -1,0 +1,115 @@
+---
+title: "please"
+author: "jhr"
+format: html
+jupyter: python3
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+## 파이썬 코드 청크
+
+* 단축키 : Ctrl + Alt + I
+
+## 코드 청크 종류
+
+1. 인라인 코드 청크 : 백틱 하나로 묶음 (')
+
+2. 디스플레이 코드 청크: 백틱 세 개로 묶음 (''')
+
+## 실행가능한 코드청크
+
+백틱 뒤에 '{python}'을 붙여주면 됨.
+
+```{python}
+1 + 1
+```
+
+## 코드 청크 실행 옵션
+옵션은 '#|'로 시작.
+
+* echo 옵션: 코드를 문서에 보여줌
+* eval 옵션: 코드를 돌릴 것인가를 결정
+* 기본 설정은 true, true
+
+```{python}
+#| echo: true
+#| eval: false
+1 + 1
+```
+
+You can add options to executable code like this 
+
+```{python}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
+
+## 각주
+이것은 간단한 각주[^1]입니다.
+이것은 간단한 각주[^2]입니다.
+이것은 간단한 각주[^3]입니다.
+이것은 간단한 각주[^4]입니다.
+
+[^1]: 이것은 참조된 텍스트입니다.
+[^2]: 이것은 참조된 텍스트입니다.
+[^3]: 이것은 참조된 텍스트입니다.
+[^4]: 이것은 참조된 텍스트입니다.
+
+**굵은 텍스트**
+
+*기울인 텍스트*
+
+~~취소선 텍스트~~
+
+1. 리스트 1
+2. 리스트 2
+3. 리스트 3
+
+- 순서없는 리스트 1
+- 순서없는 리스트 2
+- 순서없는 리스트 3
+
+## 체크박스
+
+### 해야 할 일들
+
+- [x] 화분 물 주기
+- [-] 우편함 확인
+- [ ] 밀린 일기 작성
+
+
+## 링크
+
+[슬기로운 통계생활](https://statisticsplaybook.com/)
+
+##이미지 (느낌표 붙여여)
+
+![위키피디아 흑요석](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/ObsidianOregon.jpg/360px-ObsidianOregon.jpg)
+![윤](./img/다운로드.jfif)
+
+## go to directory -> 내 폴더 안의 이미지 안의 다운로드.jfif
+
+* 인라인 수식 : $하나로 감싸준다. (본문에 입력)
+* 디스플레이 수식: $ 두개로 감싸준다. (독립적인 문단)
+
+문장 안에 숫자 5를 넣어보자.
+문장안에 숫자 %5^2$를 넣어보자.
+
+여러 숫자들을 따로 뗴어 표시하자.
+
+$$
+x^2 + y^2 = 5
+$$
+
+$$
+\sqrt{2}^{3}_{1}
+$$
